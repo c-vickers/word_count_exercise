@@ -15,6 +15,9 @@ def word_count(filename):
 			# 	poem_words[word] = 1
 			# temp_value = poem_words.get(word, 0) # tell me what temp_value is
 			# poem_words[word] = temp_value + 1 # adds a value
+# Further Study - is isalpha to see if last character in string is punctuation
+# If non-alpha remove
+# lowercase method
 			poem_words[word] = poem_words.get(word, 0) + 1
 	# print poem_words
 
