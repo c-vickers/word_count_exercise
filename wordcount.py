@@ -19,4 +19,4 @@ def word_count(filename):
 	for key, value in poem_words.items():
 		print "{} : {}".format (key, value)
 
-word_count("test.txt")
+word_count("twain.txt")
