@@ -13,8 +13,9 @@ def word_count(filename):
 			# 	poem_words[word] = poem_words[word] + 1
 			# elif word not in poem_words:
 			# 	poem_words[word] = 1
-			temp_value = poem_words.get(word, 0) # tell me what temp_value is
-			poem_words[word] = temp_value + 1 # adds a value
+			# temp_value = poem_words.get(word, 0) # tell me what temp_value is
+			# poem_words[word] = temp_value + 1 # adds a value
+			poem_words[word] = poem_words.get(word, 0) + 1
 	# print poem_words
 
 # 3 print word count - .items() or .iteritems()
