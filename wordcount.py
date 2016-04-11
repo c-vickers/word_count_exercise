@@ -9,10 +9,12 @@ def word_count(filename):
 		
 # 2 word count - space separated words
 		for word in words:
-			if word in poem_words:
-				poem_words[word] = poem_words[word] + 1
-			elif word not in poem_words:
-				poem_words[word] = 1
+			# if word in poem_words:
+			# 	poem_words[word] = poem_words[word] + 1
+			# elif word not in poem_words:
+			# 	poem_words[word] = 1
+			temp_value = poem_words.get(word, 0) # tell me what temp_value is
+			poem_words[word] = temp_value + 1 # adds a value
 	# print poem_words
 
 # 3 print word count - .items() or .iteritems()
