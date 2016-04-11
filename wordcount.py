@@ -16,7 +16,7 @@ def word_count(filename):
 	# print poem_words
 
 # 3 print word count - .items() or .iteritems()
-	for key, value in poem_words.items():
+	for key, value in poem_words.iteritems():
 		print "{} : {}".format (key, value)
 
 word_count("twain.txt")
